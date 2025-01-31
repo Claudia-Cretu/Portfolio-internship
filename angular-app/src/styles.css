@@ -1,2 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@layer base {
+    :root {
+      --color-dark-purple: 39, 13, 61;
+      --color-normal-purple: 83, 38, 103;
+      --color-light-purple: 185, 161, 204;
+      --color-white-normal: 255, 255, 255;
+      --color-white-cream: 243, 233, 224;
+      --color-dark-cream: 255, 234, 216;
+      --color-light-blue: 159, 168, 209;
+      --color-dark-black: 0, 0, 0;
+    }
+  }
+  
