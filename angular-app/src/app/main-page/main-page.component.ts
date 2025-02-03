@@ -2,9 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main-page',
-  imports: [],
   templateUrl: './main-page.component.html',
-  styleUrl: './main-page.component.css'
+  styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
 
@@ -12,5 +11,19 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
     
+  }
+
+  scrollToInfoSection() {
+    const infoSection = document.getElementById('info-section');
+    if (infoSection) {
+      infoSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  scrollToProjectsSection() {
+    const projectsSection = document.getElementById('projects-section');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }

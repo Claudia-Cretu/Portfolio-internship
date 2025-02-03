@@ -1,1 +1,54 @@
-<p>main-page works!</p>
+<div class="main-page" style="background-color: var(--color-white-cream); min-height: 100vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding-top: 160px; padding-left: 180px;">
+    <section style="text-align: left; color: var(--color-dark-blue); display: flex; align-items: center;">
+        <div>
+            <h1 style="font-size: 4em; font-weight: bold; font-style: italic;">Cretu Claudia</h1>
+            <h2 style="font-size: 2em; font-weight: bold; font-style: italic;">Ux Designer/Front end developer</h2>
+        </div>
+        <img src="assets/profile.jpg" alt="Cretu Claudia" style="width: 280px; height: 380px; border-radius: 5%; margin-left: 220px;">
+    </section>
+    <button (click)="scrollToInfoSection()" style="background-color: var(--color-blue); margin-top: 40px; padding: 10px 20px; border-radius: 10%; font-size: 1.2em; font-weight: 500; cursor: pointer;">Discover More</button>
+</div>
+
+<section id="info-section" style="background-color: var(--color-white-cream); min-height: 100vh; padding: 50px; padding-left: 180px;">
+    <h2 style="font-size: 2.4em; font-weight: bold; color: var(--color-dark-blue); padding: 10px;">Portfolio Internship</h2>
+    <p style="font-size: 1.3em; color: var(--color-dark-black); padding-left: 10px; margin-bottom: 20px;">
+        Welcome to my portfolio where I showcase my work during my journey as a student at Fontys ICT. Here you can discover many interesting things that I have created, demonstrating my skills and knowledge.
+    </p>
+    <h2 style="font-size: 2.4em; font-weight: bold; color: var(--color-dark-blue); padding: 10px;">About Me</h2>
+    <p style="font-size: 1.3em; color: var(--color-dark-black); padding-left: 10px;">
+        Hello, I am Claudia, a 23-year-old student at Fontys University of Applied Sciences. I am currently in my second year of studies, specializing in User Experience Design and Front-end Development. I am passionate about creating beautiful and functional websites and applications that provide a great user experience. I am always eager to learn new things and improve my skills. I am a creative person who loves to design and develop digital products that make people's lives easier and more enjoyable.
+        As my studies progress, I am looking forward to gaining more experience and knowledge in the field of web development and design. I am excited to work on new projects and challenges that will help me grow as a professional. I am confident that my skills and dedication will help me achieve my goals and become a successful UX designer and front-end developer.
+        In my free time, I enjoy reading, drawing, making puzzles and spending time with my friends and family. I am a curious person who loves to explore new places and cultures. I am always looking for new experiences and opportunities to learn and grow. I believe that life is an adventure, and I am ready to embrace it with open arms.
+    </p>
+    <button (click)="scrollToProjectsSection()" style="background-color: var(--color-blue); margin-top: 30px; padding: 10px 20px; border-radius: 10%; font-size: 1.2em; font-weight: 500; cursor: pointer;">Discover My Work</button>
+</section>
+
+<section id="projects-section" style="background-color: var(--color-white-cream); min-height: 100vh; padding: 50px;">
+    <h2 style="font-size: 2.4em; font-weight: bold; color: var(--color-dark-blue); padding: 40px;">My Projects</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        <div style="text-align: center; background-color: var(--color-blue); padding: 20px; border-radius: 10px;">
+            <h3 style="font-size: 1.5em; font-weight: bold; font-style: italic; color: var(--color-dark-black);">Portfolio semester 2</h3>
+            <button style="background-color: var(--color-white-cream); border-radius: 10px; margin-top: 10px; padding: 10px 20px; font-size: 1em; cursor: pointer;">View Project</button>
+        </div>
+        <div style="text-align: center; background-color: var(--color-blue); padding: 20px; border-radius: 10px;">
+            <h3 style="font-size: 1.5em; font-weight: bold; font-style: italic; color: var(--color-dark-black);">Portfolio semester 3</h3>
+            <button style="background-color: var(--color-white-cream); border-radius: 10px; margin-top: 10px; padding: 10px 20px; font-size: 1em; cursor: pointer;">View Project</button>
+        </div>
+        <div style="text-align: center; background-color: var(--color-blue); padding: 20px; border-radius: 10px;">
+            <h3 style="font-size: 1.5em; font-weight: bold; font-style: italic; color: var(--color-dark-black);">Ticket system website</h3>
+            <button style="background-color: var(--color-white-cream); border-radius: 10px; margin-top: 10px; padding: 10px 20px; font-size: 1em; cursor: pointer;">View Project</button>
+        </div>
+        <div style="text-align: center; background-color: var(--color-blue); padding: 20px; border-radius: 10px;">
+            <h3 style="font-size: 1.5em; font-weight: bold; font-style: italic; color: var(--color-dark-black);">Photography blog website</h3>
+            <button style="background-color: var(--color-white-cream); border-radius: 10px; margin-top: 10px; padding: 10px 20px; font-size: 1em; cursor: pointer;">View Project</button>
+        </div>
+        <div style="text-align: center; background-color: var(--color-blue); padding: 20px; border-radius: 10px;">
+            <h3 style="font-size: 1.5em; font-weight: bold; font-style: italic; color: var(--color-dark-black);">Group projects</h3>
+            <button style="background-color: var(--color-white-cream); border-radius: 10px; margin-top: 10px; padding: 10px 20px; font-size: 1em; cursor: pointer;">View Project</button>
+        </div>
+        <div style="text-align: center; background-color: var(--color-blue); padding: 20px; border-radius: 10px;">
+            <h3 style="font-size: 1.5em; font-weight: bold; font-style: italic; color: var(--color-dark-black);">Project 6</h3>
+            <button style="background-color: var(--color-white-cream); border-radius: 10px; margin-top: 10px; padding: 10px 20px; font-size: 1em; cursor: pointer;">View Project</button>
+        </div>
+    </div>
+</section>
