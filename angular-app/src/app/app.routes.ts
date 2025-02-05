@@ -6,6 +6,7 @@ import { Project3Component } from './projects/project3/project3.component';
 import { Project4Component } from './projects/project4/project4.component';
 import { Project5Component } from './projects/project5/project5.component';
 import { Project6Component } from './projects/project6/project6.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
   { path: '', component: MainPageComponent },
@@ -15,4 +16,5 @@ export const routes: Routes = [
   { path: 'project4', component: Project4Component },
   { path: 'project5', component: Project5Component },
   { path: 'project6', component: Project6Component },
+  { path: 'contact', component: ContactComponent },
 ];
