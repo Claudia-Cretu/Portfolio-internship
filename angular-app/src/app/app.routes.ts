@@ -7,6 +7,7 @@ import { Project4Component } from './projects/project4/project4.component';
 import { Project5Component } from './projects/project5/project5.component';
 import { Project6Component } from './projects/project6/project6.component';
 import { ContactComponent } from './contact/contact.component';
+import { SmartMobileComponent } from './smart-mobile/smart-mobile/smart-mobile.component';
 
 export const routes: Routes = [
   { path: '', component: MainPageComponent },
@@ -17,4 +18,5 @@ export const routes: Routes = [
   { path: 'project5', component: Project5Component },
   { path: 'project6', component: Project6Component },
   { path: 'contact', component: ContactComponent },
+  { path: 'smart-mobile', component: SmartMobileComponent },
 ];
