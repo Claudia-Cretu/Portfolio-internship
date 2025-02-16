@@ -11,11 +11,8 @@ import { CommonModule } from '@angular/common';
 export class NavbarComponent {
   dropdownVisible = false;
 
-  showDropdown() {
-    this.dropdownVisible = true;
-  }
-
-  hideDropdown() {
-    this.dropdownVisible = false;
+  toggleDropdown(event: Event) {
+    event.preventDefault();
+    this.dropdownVisible = !this.dropdownVisible;
   }
 }

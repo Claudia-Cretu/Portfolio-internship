@@ -1,21 +1,42 @@
-<nav style="background-color: var(--color-blue); color: var(--color-dark-black); padding: 20px;">
-    <ul style="list-style: none; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 0;">
-        <li style="font-size: 1.5em; font-weight: bold; margin-left: 60px; ">Claudia's Portfolio</li>
+<nav
+    style="background-color: var(--color-blue); color: var(--color-dark-black); padding: 20px; width: 1530px; position: fixed;">
+    <ul
+        style="list-style: none; display: flex; justify-content: space-between; align-items: center; margin: 0; padding: 0;">
+        <li style="font-size: 1.5em; font-weight: bold; margin-left: 60px;">Claudia's Portfolio</li>
         <div style="display: flex; align-items: center;">
-            <li style="margin-left: 20px;"><a href="/" style="color: var(--color-dark-black); text-decoration: underline; font-weight: 500;">Home</a></li>
-            <li style="position: relative; margin-left: 80px;" (mouseover)="showDropdown()" (mouseout)="hideDropdown()">
-                <a href="#" style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; text-decoration: underline; ">Projects</a>
-                <div class="dropdown" [ngStyle]="{'display': dropdownVisible ? 'flex' : 'none'}" style="position: absolute; top: 150%; left: 0; background-color: var(--color-blue); border-radius: 5px; flex-direction: column; padding: 10px;">
-                    <a href="/project1" style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 10px; border: 1px solid var(--color-dark-blue); padding: 5px;">Portfolio semester 2 & 3</a>
-                    <a href="/project2" style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 10px; border: 1px solid var(--color-dark-blue); padding: 5px;">Internship portfolio</a>
-                    <a href="/project3" style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 10px; border: 1px solid var(--color-dark-blue); padding: 5px;">Ticket system website</a>
-                    <a href="/project4" style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 10px; border: 1px solid var(--color-dark-blue); padding: 5px;">Photography blog website</a>
-                    <a href="/project5" style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 10px; border: 1px solid var(--color-dark-blue); padding: 5px;">Group projects</a>
-                    <a href="/project6" style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 10px; border: 1px solid var(--color-dark-blue); padding: 5px;">Small interesting projects</a>
-                    <a href="/smart-mobile" style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; border: 1px solid var(--color-dark-blue); padding: 5px;">Smart Mobile</a>
+            <li style="margin-left: 20px;"><a href="/"
+                    style="color: var(--color-dark-black); text-decoration: underline; font-weight: 500;">Home</a></li>
+            <li style="position: relative; margin-left: 80px;">
+                <a href="#" (click)="toggleDropdown($event)"
+                    style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; text-decoration: underline;">Projects</a>
+                <div class="dropdown" [ngStyle]="{'display': dropdownVisible ? 'flex' : 'none'}"
+                    style="position: absolute; top: 150%; left: 0; background-color: var(--color-blue); border-radius: 5px; flex-direction: column; padding: 10px;">
+                    <a href="/project1"
+                        style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 5px; border: 1px solid var(--color-dark-blue); padding: 5px;">Portfolio
+                        semester 2 & 3</a>
+                    <a href="/project2"
+                        style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 5px; border: 1px solid var(--color-dark-blue); padding: 5px;">Internship
+                        portfolio</a>
+                    <a href="/project3"
+                        style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 5px; border: 1px solid var(--color-dark-blue); padding: 5px;">Ticket
+                        system website</a>
+                    <a href="/project4"
+                        style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 5px; border: 1px solid var(--color-dark-blue); padding: 5px;">Photography
+                        blog website</a>
+                    <a href="/project5"
+                        style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 5px; border: 1px solid var(--color-dark-blue); padding: 5px;">Group
+                        projects</a>
+                    <a href="/project6"
+                        style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; margin-bottom: 5px; border: 1px solid var(--color-dark-blue); padding: 5px;">Small
+                        interesting projects</a>
+                    <a href="/smart-mobile"
+                        style="color: var(--color-dark-black); text-decoration: none; font-weight: 500; border: 1px solid var(--color-dark-blue); padding: 5px;">Smart
+                        Mobile</a>
                 </div>
             </li>
-            <li style="margin-left: 80px;"><a href="/contact" style="color: var(--color-dark-black); text-decoration: underline; font-weight: 500;">Contact</a></li>
+            <li style="margin-left: 80px;"><a href="/contact"
+                    style="color: var(--color-dark-black); text-decoration: underline; font-weight: 500;">Contact</a>
+            </li>
         </div>
     </ul>
 </nav>
