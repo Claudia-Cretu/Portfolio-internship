@@ -1,17 +1,17 @@
-<div class="main-page"
-    style="background-color: var(--color-white-cream); min-height: 100vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding-top: 190px; padding-left: 180px;">
+<div class="main-page" style="background-color: var(--color-white-cream); min-height: 100vh; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; padding-top: 150px; padding-left: 180px;">
     <section style="text-align: left; color: var(--color-dark-blue); display: flex; align-items: center;">
         <div>
             <h1 style="font-size: 4em; font-weight: bold; font-style: italic;">Cretu Claudia</h1>
             <h2 style="font-size: 2em; font-weight: bold; font-style: italic;">Ux Designer/Front end developer</h2>
         </div>
-        <img src="assets/profile.jpg" alt="Cretu Claudia"
-            style="width: 280px; height: 380px; border-radius: 5%; margin-left: 220px;">
+        <div style="display: flex; flex-direction: column; align-items: center; margin-left: 220px;">
+            <img src="assets/profile.jpg" alt="Cretu Claudia" style="width: 280px; height: 380px; border-radius: 5%;">
+            <a href="assets/CV.pdf" target="_blank" style="background-color: var(--color-blue); margin-top: 20px; padding: 10px 20px; border-radius: 10%; font-size: 1.2em; font-weight: 500; color: var(--color-dark-black); text-decoration: none; display: inline-block;">View my CV</a>
+        </div>
     </section>
-    <button (click)="scrollToInfoSection()"
-        style="background-color: var(--color-blue); margin-top: 40px; padding: 10px 20px; border-radius: 10%; font-size: 1.2em; font-weight: 500; cursor: pointer;">Discover
-        More</button>
+    <button (click)="scrollToInfoSection()" style="background-color: var(--color-blue); margin-top: 40px; padding: 10px 20px; border-radius: 10%; font-size: 1.2em; font-weight: 500; cursor: pointer;">Discover More</button>
 </div>
+
 
 <section id="info-section"
     style="background-color: var(--color-white-cream); min-height: 100vh; padding: 50px; padding-left: 180px;">
